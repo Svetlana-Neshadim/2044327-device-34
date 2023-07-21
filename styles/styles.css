@@ -44,7 +44,59 @@ a {
   background: #FFE17F;
   color: #000;
 }
+.search-form-field::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(/images/search.svg);
+  left: 32px;
 
+}
+.search-form-field {
+  width: 359px;
+  height: 36px;
+  border-radius: 50px 0px 0px 50px;
+  border: 2px solid #000;
+  background-color: #FFE17F;
+  padding: 0 0 0 48px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+
+
+}
+button.search-form-field {
+  width: 160px;
+  height: 40px;
+  padding: 0;
+  border-radius: 0px 50px 50px 0px;
+
+}
+
+.navigation-link-login::before {
+  content: url(/images/icon-login.svg);
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  left: 12px;
+}
+.navigation-link-compare::before {
+  content: url(/images/icon-compare.svg);
+  width: 10px;
+  height: 12px;
+  position: absolute;
+  left: 12px;
+}
+.navigation-link-card::before {
+  content: url(/images/card.svg);
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  left: 12px;
+}
 .navigation-link {
   font-family: "Raleway", sans-serif;
   color: #000;
@@ -54,6 +106,7 @@ a {
 
 .navigation-link-user {
   color: #000;
+  padding-left: 27px;
 }
 
 .main-catalog-link {
