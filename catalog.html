@@ -35,7 +35,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <button class="navigation-link-toggler" type="button">Каталог товаров</button>
+            <a class="navigation-link-toggler" type="button">Каталог товаров</a>
           </li>
           <li class="navigation-item">
             <a href="delivery.html" class="navigation-link">Доставка</a>
@@ -68,7 +68,7 @@
       </header>
 
       <section class="catalog-products">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <h2 class="filter">Фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
@@ -79,11 +79,11 @@
               <span class="visually-hidden">Изменить максимальную цену</span>
             </button>
             <label class="catalog-filter-label">
-              от <input class="catalog-filter-input" type="number" name="min-price">
+              от 0<input class="catalog-filter-input" type="number" name="min-price">
             </label>
 
             <label class="catalog-filter-label">
-              до <input class="catalog-filter-input" type="number" name="max-price">
+              до 5000<input class="catalog-filter-input" type="number" name="max-price">
             </label>
           </fieldset>
           <fieldset class="catalog-filter-group">
@@ -149,7 +149,7 @@
         </form>
 
         <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
+          <label class="sorting-title" for="sorting">Сортировка:</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">Популярные</option>
           </select>
@@ -161,34 +161,34 @@
             <li class="priduct-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                <h3 class="product-card-title">Любительская селфи-палка</h3>
+                <h3 class="product-card-title">Любительская <br>селфи-палка</h3>
               </a>
               <p class="product-card-price">500 ₽</p>
             </li>
             <li class="priduct-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                <h3 class="product-card-title">Профессиональная селфи-палка </h3>
+                <h3 class="product-card-title">Профессиональная <br>селфи-палка </h3>
               </a>
               <p class="product-card-price">1 500 ₽</p>
             </li>
             <li class="priduct-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                <h3 class="product-card-title">Непотопляемая <br>селфи-палка</h3>
               </a>
               <p class="product-card-price">2 500 ₽</p>
             </li>
             <li class="priduct-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                <h3 class="product-card-title">Селфи-палка «Следуй за <br>мной»</h3>
               </a>
               <p class="product-card-price">1 500 ₽</p>
             </li>
           </ul>
 
-          <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+          <button class="pagination-show-more" type="button">Загрузить ещё</button>
 
           <ul class="pagination">
             <li class="pagination-item">
