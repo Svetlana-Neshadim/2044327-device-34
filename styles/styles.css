@@ -20,13 +20,20 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   background-color: #fff;
   color: #444;
-  margin: 0 auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 ul {
   list-style: none;
@@ -45,7 +52,73 @@ a {
   background: #FFE17F;
   color: #000;
 }
+.header-container {
+  display: flex;
+  flex-direction: row;
+  width: 1040px;
+  margin: 0 auto;
+  align-items: center;
+}
+.search-form {
+  display: flex;
+  width: 515px;
+  height: 36px;
+  border: 2px solid #000;
+  background-color: #FFE17F;
+  /*padding: 0 0 0 48px;*/
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+}
+.search-form-field {
+  background-color: #FFE17F;
+  padding: 0 0 0 48px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  outline: none;
+}
+.search-form-input {
+  width: 359px;
+  border-radius: 50px 0px 0px 50px;
+}
+.search-form-button {
+  width: 160px;
+  /*height: 36px;*/
+  padding: 0;
+  border-radius: 0px 50px 50px 0px;
+}
 .search-form-field::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(/images/search.svg);
+  right: 485px;
+}
+.navigation-user {
+  display: flex;
+  width: 525px;
+  justify-content: flex-end;
+}
+.navigation {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*.search-form-field::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -97,7 +170,7 @@ button.search-form-field {
   height: 14px;
   position: absolute;
   left: 12px;
-}
+}*/
 .navigation-link {
   font-family: "Raleway", sans-serif;
   color: #000;
@@ -108,6 +181,10 @@ button.search-form-field {
 .navigation-link-user {
   color: #000;
   padding-left: 27px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-catalog-link {
@@ -289,4 +366,24 @@ button.search-form-field {
   color: #000;
   font-weight: 700;
   line-height: 20px;
+}
+.pagination-show-more {
+  font-family: "Ralewey", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+.pagination-prev, .pagination-next {
+  font-family: "Ralewey", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  color: #000;
+}
+.pagination-number {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.3;
 }

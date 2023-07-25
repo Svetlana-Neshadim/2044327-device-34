@@ -10,25 +10,27 @@
       <a class="header-logo" href="#">
         <img src="images/logo.svg" alt="Логотип Девайс" width="145" height="36"/>
       </a>
-      <form class="search-form" action="https://echo.htmlacademy.ru/">
-        <input type="serch" name="search" class="search-form-field search-form-input" value="Текст поиска"/>
-        <button class="search-form-field search-form-button" type="submit">Найти</button>
-      </form>
-
-      <nav class="navigation navigation-user">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="#" class="navigation-link-user navigation-link-login">Войти</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link-user navigation-link-compare">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link-user navigation-link-card">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-
+      <div class="header-container">
+        <form class="search-form" action="https://echo.htmlacademy.ru/">
+          <input type="serch" name="search" class="search-form-field search-form-input" value="Текст поиска"/>
+          <button class="search-form-field search-form-button" type="submit">Найти</button>
+        </form>
+        <div class="nav-container">
+          <nav class="navigation navigation-user">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a href="#" class="navigation-link-user navigation-link-login">Войти</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link-user navigation-link-compare">Сравнить</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link-user navigation-link-card">Корзина</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -48,9 +50,9 @@
     </header>
 
 
-    <main class="main-index">
+    <main class="main-container main-index">
 
-      <section class="main-slider">
+    <section class="main-slider">
         <h2 class="visually-hidden">Наши предложения</h2>
         <img class="main-slider-image" src="images/slider-1.png" alt="Квадрокоптер" width="560" height="560">
           <button class="main-slider-button main-slider-prev" type="button">
