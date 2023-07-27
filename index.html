@@ -6,44 +6,40 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header header-container">
       <a class="header-logo" href="#">
         <img src="images/logo.svg" alt="Логотип Девайс" width="145" height="36"/>
       </a>
-      <div class="header-container">
-        <form class="search-form" action="https://echo.htmlacademy.ru/">
-          <input type="serch" name="search" class="search-form-field search-form-input" value="Текст поиска"/>
-          <button class="search-form-field search-form-button" type="submit">Найти</button>
-        </form>
-        <div class="nav-container">
-          <nav class="navigation navigation-user">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a href="#" class="navigation-link-user navigation-link-login">Войти</a>
-              </li>
-              <li class="navigation-item">
-                <a href="#" class="navigation-link-user navigation-link-compare">Сравнить</a>
-              </li>
-              <li class="navigation-item">
-                <a href="#" class="navigation-link-user navigation-link-card">Корзина</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="" class="navigation-link toggler">Каталог товаров</a>
+      <form class="search-form" action="https://echo.htmlacademy.ru/">
+        <input type="serch" name="search" class="search-form-field search-form-input" value="Текст поиска"/>
+        <button class="search-form-field search-form-button" type="submit">Найти</button>
+      </form>
+      <nav class="navigation navigation-user">
+        <ul class="navigation-list navigation-user-list">
+          <li class="navigation-user-item">
+            <a href="#" class="navigation-user-link">Войти</a>
           </li>
-          <li class="navigation-item">
-            <a href="delivery.html" class="navigation-link">Доставка</a>
+          <li class="navigation-user-item">
+            <a href="#" class="navigation-user-link">Сравнить</a>
           </li>
-          <li class="navigation-item">
-            <a href="vacancies.html" class="navigation-link">Гарантия</a>
+          <li class="navigation-user-item">
+            <a href="#" class="navigation-user-link">Корзина</a>
           </li>
-          <li class="navigation-item">
-            <a href="contacts.html" class="navigation-link">Контакты</a>
+        </ul>
+      </nav>
+      <nav class="navigation navigation-catalog">
+        <ul class="navigation-list navigation-catalog-list">
+          <li class="navigation-catalog-item">
+            <a href="" class="navigation-catalog-link toggler">Каталог товаров</a>
+          </li>
+          <li class="navigation-catalog-item">
+            <a href="delivery.html" class="navigation-catalog-link">Доставка</a>
+          </li>
+          <li class="navigation-catalog-item">
+            <a href="vacancies.html" class="navigation-catalog-link">Гарантия</a>
+          </li>
+          <li class="navigation-catalog-item">
+            <a href="contacts.html" class="navigation-catalog-link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -132,13 +128,13 @@
         <div class="main-services-tabs">
           <ul class="main-services-items">
             <li class="main-services-list main-services-list-active">
-              Доставка
+              <a class="button maun-services-link">Доставка</a>
             </li>
             <li class="main-services-list">
-              Гарантия
+              <a class="button maun-services-link">Гарантия</a>
             </li>
             <li class="main-services-list">
-              Кредит
+              <a class="button maun-services-link">Кредит</a>
             </li>
           </ul>
         </div>
@@ -178,7 +174,7 @@
           <li class="main-contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="main-contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a type="button" class="button main-contacts-button">Напишите нам</a>
+        <a href="#" class="button main-contacts-button">Напишите нам</a>
       </section>
 
       <section class="main-newsletter">
@@ -190,7 +186,7 @@
             <label class="visually-hidden" for="main-newsletter-email">Email</label>
             <input class="field" type="email" name="main-newsletter-email" placeholder="Ваш e-mail" id="main-newsletter-email" required>
           </p>
-            <a type="submit" class="button main-newsletter-button">Подписаться</a>
+            <button class="button main-newsletter-button">Подписаться</button>
         </form>
         <p class="main-newsletter-note">Это бесплатно</p>
       </section>
